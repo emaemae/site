@@ -1,0 +1,156 @@
+@media (max-width: 1230px){
+    .container{
+        
+        margin-left: 3%;
+        margin-right: 3%;
+       
+        
+    }
+    .header-img{
+       
+        /* outline: 2px solid blue; */
+        display:flex;
+        justify-content: center;
+    }
+    .header-img img {
+       
+        width: 50px;
+        height: 25px;
+        margin-left: 2%;
+        margin-right: 2%;
+        /* outline: 2px solid green; */
+    }
+    .logo{
+        font-size: 150%;}
+    .nav-list{
+    display:none;
+    }
+    .nav-button{
+        display: block;
+    }
+    .nav.open .nav-list{
+        /* display: block; */
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+
+        padding: 46px 30px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+
+        font-size: 34px;
+        font-weight: 600;
+
+    }
+
+    .nav-link{
+        color: #828282;
+    }
+    .nav-link.active{
+        color: #007ACC;
+    }
+    .nav.open .nav-button{
+        background-color: #ffff;
+    }
+    .nav-button{
+        position: fixed;
+        top: 46px;
+        right: 30px;
+        background-color: #EAEAEA;
+    }
+
+    .header-row{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .header-img img{
+       
+        width: 25em;
+        height: 20em;
+        /* outline: 2px solid red; */
+    }
+    .header-img {
+        margin: 0 auto;
+        /* outline: 2px solid red; */
+    }
+    .header-content{
+        margin: 0 auto;
+        width: 100%;
+        
+        text-align: center;
+    
+        /* outline: 2px solid red; */
+    }
+    .header-heading{
+        font-weight: 300;
+        font-size: 60;
+        margin-bottom: 0.7em;;
+    }
+    .tech-item-title{
+        font-weight: 700;
+        font-size: 26px;
+        color: #FFFFFF;
+        margin-bottom: 0.4em;
+        text-align: center;
+    }
+    
+    .tech-item p{
+        font-weight: 400;
+        font-size: 14px;
+        color: #FFFFFF;
+        line-height: 1.8em;
+        margin-bottom: 1em;
+        text-align: center;
+        max-width: 80%;
+    }
+
+    .portfolio{
+        width: 100%;
+        padding: 60px 14%;
+        
+    }
+    #img1{
+        width: 200px;
+        margin: auto;
+        
+    }
+    .pr-row #img2{
+        width: 200px;
+        margin: auto;
+        
+    }
+    .pr-col #img3{
+        width: 250px;
+        margin: auto;
+        
+    }
+    
+    .pr-row{
+        
+        display: flex;
+        column-gap: 2%;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .title-1{
+        font-weight: 700;
+        font-size: 28px;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    h3{
+        font-weight: 700;
+        font-size: 22px;
+    }
+    h3.project{
+        padding-top: 0.5%;
+        font-weight: 100;
+        font-size: 18px;
+        color: black;
+    }
+}

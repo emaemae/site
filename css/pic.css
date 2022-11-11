@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+   
+    box-sizing: border-box;
+    background-color: white;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    display:inline;
+}
+
+
+.pic {
+    position: fixed;
+    /* flex-grow: 1; */
+    display: flex;
+    justify-content: center;
+    border: 1px double black;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 80px auto;
+    margin-bottom: 30px;
+    
+    
+    
+}
+.text-center{
+    position:absolute;
+    color: black;
+    font-size: 20px;
+    bottom: 200px;
+    left: 60px;
+}
+
+.head{
+    position: absolute;
+    width: 30px;
+    height: 53px;
+    border-radius: 50%;
+    background-color: tan;
+    top: 30px;
+    left: 50px;
+}
+
+.face{
+    position: absolute;
+    width: 36px;
+    height: 23px;
+    border-radius: 20%;
+    background: linear-gradient(45deg, #dba774, white);
+    left: 25px;
+    top: 41px;
+    transform: rotate(-8deg);
+
+}
+
+.face::after{
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: dimgrey;
+    left: 30px;
+    top: -2px;
+}
+
+.face::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:#a17c56;
+    left: 0px;
+    top: -3px;
+}
+
+
+.body{
+
+    position: absolute;
+    width: 72px;
+    height: 33px;
+    border-radius: 50%;
+    background-color:#a17c56;
+    top: 72px;
+    left: 60px;
+   
+
+}
+
+.ear{
+    position: absolute;
+    width: 25px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(white, #dba774);
+    top: 38px;
+    left: 62px;
+}
+
+.tail{
+    
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:#a17c56;
+    left: 118px;
+    top: 60px;
+    transform: rotate(10deg);
+
+}
+
+.tail::before{
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: white;
+    transform: rotate(-10deg);
+    top:-1px;
+    left:-2px;
+}
+
+.leftleg{
+    position: absolute;
+    width: 13px;
+    height: 35px;
+    border-radius: 35%;
+    background-color: tan;
+    top: 95px;
+    left: 75px;
+    transform: rotate(12deg);
+    background: radial-gradient(white, #dba774);
+}
+.leftleg::before{
+    content:"";
+    position: absolute;
+    width: 23px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient( at 0px 2px, white, tan, #a17c56);
+    transform: rotate(-12deg);
+    top: 33px;
+    right: -5px;
+
+}
+.rightleg{
+    position: absolute;
+    width: 13px;
+    height: 35px;
+    border-radius: 35%;
+    background-color: tan;
+    top: 95px;
+    left: 105px;
+    transform: rotate(-12deg);
+    background: radial-gradient(white, #dba774);
+}
+.rightleg::before{
+    content:"";
+    position: absolute;
+    width: 23px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient( at 0px 2px, white, tan, #a17c56);
+    transform: rotate(12deg);
+    top: 32px;
+    right: -4px;
+
+}
+.support{
+    position: absolute;
+    width: 75px;
+    height: 57px;
+    border-radius: 5%;
+    background-color: orange;
+    top: 136px;
+    left: 58px;
+   
+}
+
+.support::before{
+    content: "";
+    position: absolute;
+    width: 82px;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #ef7e28;
+    top: 54px;
+    left: -3px;
+
+}
+
+.line{
+    content: "";
+    position: relative;
+    width: 52px;
+    height: 3px;
+    border-radius: 20%;
+    background-color: #a17c56;
+    top: 12px;
+    left: 11px;
+}
+.line::before{
+    content: "";
+    position: absolute;
+    width: 52px;
+    height: 3px;
+    border-radius: 20%;
+    background-color: #a17c56;
+    top: 9px;
+    left: 0px;
+}
+.line::after{
+    content: "";
+    position: absolute;
+    width: 52px;
+    height: 3px;
+    border-radius: 20%;
+    background-color: #a17c56;
+    top: 18px;
+    left: 0px;
+}
+
+.triangle{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 6px solid orange;
+    border-right: 6px solid orange;
+    border-bottom: 11px solid #a17c56;
+    top: 35px;
+    left: 30px;
+}
+
+.triangle::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 6px solid orange;
+    border-right: 6px solid orange;
+    border-bottom: 11px solid #a17c56;
+    top: 0px;
+    left: 13px;
+}
+
+.triangle::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 6px solid orange;
+    border-right: 6px solid orange;
+    border-bottom: 11px solid #a17c56;
+    top: 0px;
+    right: 13px;
+}
+
+
+

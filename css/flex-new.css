@@ -1,0 +1,296 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* .header{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+
+    min-height: 80px;
+    margin-top: auto;
+    padding: 1em 5em 1em 5em;
+    text-align: center;
+    background-color: #000331;
+} */
+.content{
+
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    flex-grow: 1;
+    height: 100%;
+    background-color: rgb(226, 226, 255);
+    padding-top: 5%;
+    float: left;
+}
+h2.task-title_fl{
+    position: absolute;
+    font-weight: 700;
+    font-size: 40;
+    padding-bottom: 600px;
+    /* margin-top: -230px; */
+    
+
+    padding-top: 0.5%;
+    font-weight: 100;
+    font-size: 40;
+    color: black;
+}
+/* .footer{
+
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+
+
+    min-height: 80px;
+    margin-top: auto;
+    padding: 1em 5em 1em 5em;
+    text-align: center;
+    background-color: antiquewhite;
+} */
+
+.on-hover{
+outline: 2px solid blue; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 200px;
+    height: 200px;
+
+    background-image: url(../img/img_fl/ware2.jpg);
+    background-size: 100%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    margin-top: 50px; 
+    overflow: hidden;
+}
+
+
+#pot{
+    position: absolute;
+    height: 8em;
+    margin-top: 4rem;
+    margin-left: 1.4rem;
+    opacity: 0;
+   
+    
+}
+
+
+
+.pot::after{
+    content: "Магазин Поварёнок";
+    position: absolute;
+    /* outline: 2px solid blue;  */
+    font-size: 0.6em;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 11.2em;
+    margin-top: 0.2em;
+  opacity: 0;
+
+    
+}
+#hat{
+    position: absolute;
+    margin-top: 5.1em;
+    margin-left: 2.5em;
+    height: 5em;
+    /* outline: 2px solid blue; */
+    rotate: -25deg;
+    /* margin-top: 5em; */
+    opacity: 0;
+
+}
+.hat::before{
+    content: "Жаропрочная посуда";
+    position: absolute;
+    color: red;
+    rotate: -90deg;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    margin-top: 7.8em;
+    margin-left: -4em;
+
+    opacity: 0;
+}
+
+
+.on-hover:hover #pot{
+    animation: pot-animation 2s linear;
+    opacity: 1;
+}
+@keyframes pot-animation{
+    0%{
+        opacity: 0;
+        transform: scale(1);
+        transform-origin: center;
+    }
+    50%, 70%{
+        opacity: 1;
+        transform: scale(1.4);  
+        transform-origin: center;
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+        transform-origin: center;
+    }
+}
+
+.on-hover:hover .pot::after{
+    animation: pot-anim 2s linear;
+    opacity: 1;
+}
+@keyframes pot-anim{
+    0%{
+        opacity: 0;
+    }
+    
+    70%, 100%{
+        opacity: 1;
+    }
+}
+
+
+
+.on-hover:focus #hat{
+    /* opacity: 1; */
+    
+    animation: hat-animation 5s linear;
+    
+  /* animation-iteration-count: 2; */
+}
+
+ 
+@keyframes hat-animation{
+    0%{
+        rotate: -20deg;
+        transform-origin: 70% 50%;
+        opacity: 0;
+    }
+    10%{
+        rotate: 20deg;
+        transform-origin: 70% 50%;
+        opacity: 1;
+    }
+    25%{
+        rotate: -20deg;
+        transform-origin: 70% 50%;
+        
+    }
+    35%{
+        rotate: 20deg;
+        /* rotate: 0deg; */
+        transform-origin: 70% 50%;
+        
+    }
+    50%{
+        rotate: -20deg;
+        /* rotate: 0deg; */
+        transform-origin: 70% 50%;
+        
+    }
+    60%{
+        rotate: 20deg;
+        /* rotate: 0deg; */
+        transform-origin: 70% 50%;
+        
+    }
+    75%{
+        rotate: -20deg;
+        /* rotate: 0deg; */
+        transform-origin: 70% 50%;
+        
+    }
+    85%{
+        rotate: 20deg;
+        /* rotate: 0deg; */
+        transform-origin: 70% 50%;
+        opacity: 1;
+    }
+    100%{
+        rotate: -20deg;
+        /* rotate: 0deg; */
+        transform-origin: 70% 50%;
+        opacity: 0;
+    }
+    
+
+}
+
+.on-hover:focus .hat::before{
+    animation: pot-anim1 5s linear;
+    /* opacity: 1; */
+}
+@keyframes pot-anim1{
+    0%, 100%{
+        opacity: 0;
+    }
+    
+    50%, 95%{
+        opacity: 1;
+    }
+}
+
+.on-hover:focus #pot{
+    display: block;
+    /* opacity: 1; */
+    animation: lr_pot-animation 5s linear;
+
+  /* animation-iteration-count: 2; */
+}
+@keyframes lr_pot-animation{
+    0%, 25%, 50%, 85% {
+        transform: translateX(0%); 
+    }
+    10%, 35%, 75%, 100% {
+        transform: translateX(-1%); 
+    } 
+    10%{
+        opacity: 1;
+    }
+    85%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
+
+.on-hover:focus .pot::after{
+    animation: pot-anim2 5s linear;
+    /* opacity: 1; */
+}
+@keyframes pot-anim2{
+    100%{
+        opacity: 0;
+    }
+    
+    0%, 95%{
+        opacity: 1;
+    }
+}
